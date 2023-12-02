@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --green-color: #43ba7f;
+  --orange-color: #ff511a;
+  --lightBlue-color: #add8e6;
+  --whiteColor: #ffffff;
+  --yelloGreen-color: #9acd32;
+  --box-shadow: 0 0 1.5rem rgba(0 0 0 / 0.1);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover,
+a.active {
+  color: var(--orange-color);
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 1.5rem;
+  margin-inline: auto;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 0;
+  background-color: var(--whiteColor);
+  box-shadow: var(--box-shadow);
+  transition: padding 0.3s ease-in-out;
+}
+
+nav.scrolled {
+  padding: 2rem 0;
+}
+
+nav .container .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .container .row .logo {
+  font-size: 2rem;
+}
+
+nav .container .row .menu-bar {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+nav .container .row .menu-bar li a {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+}
+
+section {
+  padding: 12rem 0;
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--whiteColor);
+}
+
+#hero {
+  height: calc(100vh - 6rem);
+  background-color: var(--lightBlue-color);
+}
+
+#about {
+  background-color: var(--orange-color);
+}
+
+#testimonial {
+  background-color: var(--green-color);
+}
+
+#contact {
+  background-color: var(--yelloGreen-color);
+}
